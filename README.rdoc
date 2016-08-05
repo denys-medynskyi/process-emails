@@ -1,3 +1,13 @@
-https://sendgrid.com/blog/receiving-email-in-your-rails-app-with-griddler/
+made using this url - https://sendgrid.com/blog/receiving-email-in-your-rails-app-with-griddler/
 
-process-emails.herokuapp.com
+require 'localtunnel'
+
+Localtunnel::Client.start(port: 3000)
+
+Localtunnel::Client.running? # => true
+
+Localtunnel::Client.url # => https://pnevcucqgb.localtunnel.me
+
+Localtunnel::Client.stop
+
+setup webhook here - https://mailgun.com/app/webhooks/mg.friivii.no - with created localtunnel url
