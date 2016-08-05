@@ -1,8 +1,15 @@
 made using this url - https://sendgrid.com/blog/receiving-email-in-your-rails-app-with-griddler/
 
+Your app should be available in Internet.
+
+rails s # in one terminal window
+
+rails c # in second terminal window
+
 require 'localtunnel'
 
 Localtunnel::Client.start(port: 3000)
+
 
 Localtunnel::Client.running? # => true
 
